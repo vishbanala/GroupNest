@@ -1,0 +1,33 @@
+App Store Keywords - Multiple Options
+
+OPTION 1 (Recommended - 100 characters exactly):
+groups,lists,friends,planning,photos,shared,private,collaboration,organize,recommendations
+
+OPTION 2 (Focus on core features - 95 characters):
+groups,lists,friends,planning,photos,shared,private,collaboration,organize
+
+OPTION 3 (Include more descriptive terms - 99 characters):
+groups,lists,friends,planning,photos,shared,private,collaboration,organize,recommendations,trips
+
+OPTION 4 (More specific - 98 characters):
+groups,lists,friends,planning,photos,shared,private,collaboration,organize,restaurants
+
+OPTION 5 (Broader reach - 100 characters):
+groups,lists,friends,planning,photos,shared,private,collaboration,organize,recommendations,travel
+
+RECOMMENDED:
+groups,lists,friends,planning,photos,shared,private,collaboration,organize,recommendations
+
+This covers:
+- Core features (groups, lists, photos)
+- Use cases (planning, recommendations)
+- Key differentiators (private, shared, collaboration)
+- User intent (organize, friends)
+
+
+
+
+
+
+
+

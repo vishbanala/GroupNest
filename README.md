@@ -1,50 +1,132 @@
-# Welcome to your Expo app 👋
+# GroupNest
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A private space for you and your friends to keep lists, plans, and photos all in one clean app.
 
-## Get started
+## Features
 
-1. Install dependencies
+### 🔐 Authentication
+- Sign up and sign in with email/password
+- Secure authentication via Supabase Auth
 
+### 👥 Private Groups
+- Create groups with custom names, icons, and colors
+- Join groups with a simple join code
+- View all group members
+- Each group has its own private space
+
+### 📝 Shared Lists
+- Create lists with titles and descriptions
+- Organize lists into categories (Food, Travel, Shows/Movies, Activities, Goals)
+- Add items to lists with:
+  - Titles and descriptions
+  - Tags
+  - Photos
+  - Links
+  - Completion status
+- See who added each item
+
+### 🗳️ Voting System
+- Upvote items on lists
+- See vote counts
+- Perfect for group decisions (e.g., "Where are we eating tonight?")
+
+### 💬 Comments & Discussion
+- Comment on list items
+- View all comments in a clean interface
+- Track who said what
+
+### 📸 Shared Photo Feed
+- Upload photos to groups
+- Add captions
+- View photos in a beautiful grid layout
+- See photo details with uploader info
+- Comment on photos
+
+## Tech Stack
+
+- **Frontend**: React Native with Expo
+- **Backend**: Supabase (PostgreSQL + Auth + Storage)
+- **Navigation**: Expo Router
+- **State Management**: React Context + Hooks
+
+## Getting Started
+
+See [SETUP.md](./SETUP.md) for detailed setup instructions.
+
+### Quick Start
+
+1. **Set up Supabase**
+   - Create a project at [supabase.com](https://supabase.com)
+   - Run the SQL schema from `database/schema.sql`
+   - Get your project URL and anon key
+
+2. **Configure the app**
+   - Add your Supabase credentials to `lib/supabase.ts` or use environment variables
+
+3. **Install and run**
    ```bash
    npm install
+   npm start
    ```
 
-2. Start the app
+## Project Structure
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+GroupNest/
+├── app/                    # App screens (Expo Router)
+│   ├── (tabs)/            # Tab navigation screens
+│   │   ├── groups.tsx     # Groups list screen
+│   │   └── photos.tsx     # Photo feed screen
+│   ├── auth/              # Authentication screens
+│   │   ├── login.tsx
+│   │   └── signup.tsx
+│   ├── group/[id].tsx     # Group detail (lists)
+│   └── list/[id].tsx      # List detail (items)
+├── components/            # Reusable components
+├── contexts/              # React contexts
+│   └── AuthContext.tsx   # Authentication context
+├── lib/                   # Utilities and API
+│   ├── supabase.ts       # Supabase client
+│   └── database.ts       # Database functions
+├── types/                 # TypeScript types
+│   └── index.ts          # All type definitions
+└── database/             # Database schema
+    └── schema.sql        # Supabase SQL schema
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Key Features Implementation
 
-## Learn more
+### Groups
+- Each group has a unique join code
+- Members can be owners or regular members
+- Groups have custom colors and icons
 
-To learn more about developing your project with Expo, look at the following resources:
+### Lists & Categories
+- Lists can be organized into categories
+- Categories help keep things organized (Food, Travel, etc.)
+- Easy navigation between categories
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Voting
+- Simple upvote system
+- Vote counts displayed on each item
+- Users can toggle their votes
 
-## Join the community
+### Photos
+- Upload photos from device
+- Add captions
+- View in grid or detail view
+- Comment on photos
 
-Join our community of developers creating universal apps.
+## Next Steps
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [ ] Set up Supabase Storage for photo uploads
+- [ ] Add real-time updates with Supabase Realtime
+- [ ] Implement push notifications
+- [ ] Add @mentions in comments
+- [ ] Add emoji reactions to photos
+- [ ] Build web version
+- [ ] Deploy to App Store / Play Store
+
+## License
+
+MIT

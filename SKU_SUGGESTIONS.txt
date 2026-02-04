@@ -1,0 +1,39 @@
+SKU (Stock Keeping Unit) Suggestions
+
+An SKU is an internal identifier used by Apple to track your app. It's not visible to users and can be any alphanumeric string.
+
+RECOMMENDED OPTIONS:
+
+1. groupnest-001
+   - Simple and clean
+   - Easy to remember
+   - Good for first version
+
+2. groupnest-ios-v1
+   - Includes platform and version
+   - Clear what it represents
+
+3. GN001
+   - Short abbreviation
+   - Simple identifier
+
+4. groupnest-2025-001
+   - Includes year
+   - Good if you plan multiple apps
+
+5. com.vishbanala.groupnestapp
+   - Same as bundle ID (also valid)
+   - Easy to remember
+
+RECOMMENDATION:
+Use "groupnest-001"
+
+This is simple, professional, and easy to remember. If you create more apps later, you can use groupnest-002, etc.
+
+
+
+
+
+
+
+

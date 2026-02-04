@@ -1,0 +1,59 @@
+APP STORE CONNECT - BUNDLE ID INFORMATION
+
+When creating your app in App Store Connect, you'll see a field for "Bundle ID". Here's what to know:
+
+BUNDLE ID: com.vishbanala.GroupNest
+
+This must match EXACTLY with:
+- Your app.json file (ios.bundleIdentifier)
+- Your build configuration
+- Your provisioning profile
+
+DESCRIPTION FOR APP STORE CONNECT:
+
+The bundle ID is a unique identifier for your app. You don't need to write a description for it in App Store Connect - you just select it from a dropdown if you've already registered it, or create a new one.
+
+If you need to register a new Bundle ID:
+1. Go to Apple Developer Portal → Certificates, Identifiers & Profiles
+2. Click "Identifiers" → "+"
+3. Select "App IDs"
+4. Enter: com.vishbanala.GroupNest
+5. Select capabilities (see below)
+6. Register it
+
+CAPABILITIES TO ENABLE (in Apple Developer Portal):
+
+When registering your Bundle ID, enable these capabilities:
+
+✅ App Groups (if you plan to share data between apps)
+✅ Associated Domains (for deep linking)
+✅ Push Notifications (if you want to add them later)
+✅ Sign in with Apple (optional, for future use)
+
+Note: Photo Library and Camera access are handled through Info.plist permissions (already in your app.json), not Bundle ID capabilities.
+
+CURRENT APP CAPABILITIES (Already Configured):
+
+In your app.json, you have:
+- NSPhotoLibraryUsageDescription: "GroupNest needs access to your photos to let you share them with your groups."
+- NSCameraUsageDescription: "GroupNest needs access to your camera to let you take photos to share with your groups."
+
+These are Info.plist permissions, not Bundle ID capabilities. They're already set up correctly.
+
+WHAT TO DO:
+
+1. In App Store Connect, when creating the app:
+   - If the Bundle ID exists: Select it from dropdown
+   - If it doesn't exist: You'll need to create it in Apple Developer Portal first
+
+2. The Bundle ID is just an identifier - you don't need to describe it in App Store Connect
+
+3. Make sure it matches exactly: com.vishbanala.GroupNest
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+Bundle ID: com.vishbanala.GroupNest
+
+DESCRIPTION:
+This bundle identifier uniquely identifies GroupNest in the App Store and on user devices. It follows the reverse domain name convention (com.yourname.appname) and must match exactly between your app code, build configuration, and App Store Connect listing.
+
+The bundle ID is used for:
+- App Store identification
+- Device installation tracking
+- Push notifications (if added later)
+- App-specific data storage
+- Security and code signing
+
+CAPABILITIES & FEATURES:
+
+Required Capabilities:
+- Photo Library Access (NSPhotoLibraryUsageDescription)
+  - Purpose: Allow users to select and upload photos from their device to share with groups
+  - Usage: Users can pick photos from their library to add to group photo feeds or attach to list items
+
+- Camera Access (NSCameraUsageDescription)
+  - Purpose: Allow users to take new photos with their device camera
+  - Usage: Users can take photos directly in the app to share with their groups
+
+Current Features Using These Capabilities:
+✅ Photo upload from library
+✅ Camera access for taking photos
+✅ Photo sharing in group feeds
+✅ Photo attachments to list items
+✅ Photo organization by lists
+
+Optional Future Capabilities (Not Currently Implemented):
+- Push Notifications (for group updates, new comments, etc.)
+- Background Modes (for photo uploads in background)
+- Associated Domains (for deep linking)
+- Sign in with Apple (alternative authentication)
+- iCloud (for syncing data across devices)
+
+Technical Details:
+- Bundle ID Format: Reverse domain notation
+- Must be unique across all iOS apps
+- Cannot be changed after first App Store submission
+- Used for code signing and provisioning profiles
+
+
+
+
+
+
+
+

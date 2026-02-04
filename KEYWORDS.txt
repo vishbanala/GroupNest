@@ -1,0 +1,11 @@
+App Store Keywords (100 characters max, comma-separated):
+
+groups,lists,friends,planning,photos,shared,private,collaboration,organize,recommendations
+
+
+
+
+
+
+
+
